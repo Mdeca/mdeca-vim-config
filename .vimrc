@@ -1,5 +1,5 @@
-" vim-config
-" http://mdeca.github.io/vim-config/
+" mdeca-vim-config
+" http://mdeca.github.io/mdeca-vim-config/
 " version: 8.3.1
 
 " ============================================================================
