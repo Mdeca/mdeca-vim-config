@@ -127,10 +127,32 @@ endif
 
 " ============================================================================
 " ============================================================================
-"
+
+" Rebind <Leader> key
+let mapleader = ","
+
+" Better copy & paste
+set pastetoggle=<F2>
+set clipboard=unnamed
+
+" Mouse and backspace
+set mouse=a  " on OSX press ALT and click
+set bs=2     " make backspace behave like normal again
+
+" Quicksave command
+noremap <C-Z> :update<CR>
+vnoremap <C-Z> <C-C>:update<CR>
+inoremap <C-Z> <C-O>:update<CR>
+
+" easier moving of code blocks
+" Try to go into visual mode (v), thenselect several lines of code here and
+" then press ``>`` several times.
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation
+
 " Install any plugin into a .vim/bundle/plugin-name/ folder.
 " call pathogen#infect()
-"
+
 "" ==========================================================================
 "" ==========================================================================
 
@@ -275,7 +297,7 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 " Tasklist ------------------------------
 
 " show pending tasks list
-map <F2> :TaskList<CR>
+map <F5> :TaskList<CR>
 
 " CtrlP ------------------------------
 
