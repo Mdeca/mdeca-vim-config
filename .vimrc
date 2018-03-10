@@ -125,8 +125,8 @@ if vim_plug_just_installed
 endif
 
 
-" ============================================================================
-" ============================================================================
+"" ============================================================================
+"" ============================================================================
 
 " Rebind <Leader> key
 let mapleader = ","
@@ -150,11 +150,20 @@ inoremap <C-Z> <C-O>:update<CR>
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
-" Install any plugin into a .vim/bundle/plugin-name/ folder.
-" call pathogen#infect()
+" Disable stupid backup and swap files - they trigger too many events
+" for file system watchers
+set nobackup
+set nowritebackup
+set noswapfile
 
-"" ==========================================================================
-"" ==========================================================================
+" Setup Pathogen to manage your plugins
+" mkdir -p ~/.vim/autoload ~/.vim/bundle
+" curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+" Now you can install any plugin into a .vim/bundle/plugin-name/ folder
+call pathogen#infect()
+
+"" ============================================================================
+"" ============================================================================
 
 " ============================================================================
 " Vim settings and mappings
