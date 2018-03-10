@@ -1,6 +1,6 @@
 # mdeca-vim-config (.vimrc)
 
-Raw **.vimrc** [here](https://raw.githubusercontent.com/Mdeca/vim-config/master/.vimrc).
+Raw **.vimrc** [here](https://raw.githubusercontent.com/Mdeca/mdeca-vim-config/master/.vimrc).
 
 My personal vim configuration.
 
