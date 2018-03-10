@@ -1,5 +1,5 @@
-" mdeca-vim-config
-" https://mdeca.github.io/mdeca-vim-config/
+" vim-config
+" http://mdeca.github.io/vim-config/
 " version: 8.3.1
 
 " ============================================================================
@@ -141,6 +141,9 @@ endif
 " no vi-compatible
 set nocompatible
 
+" Automatic reloading of .vimrc
+autocmd! bufwritepost .vimrc source %
+ 
 " allow plugins by file type (required for plugins!)
 filetype plugin on
 filetype indent on
@@ -169,6 +172,7 @@ syntax on
 
 " show line numbers
 set nu
+set colorcolumn=80
 
 " tab navigation mappings
 map tn :tabn<CR>
